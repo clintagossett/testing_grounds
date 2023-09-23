@@ -1,6 +1,6 @@
 {
   "api": {
-    "shareAPI": {
+    "testingGroundsShare": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,41 +8,15 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "shareFromAPICreation"
+          "resourceName": "testinggroundsb76a02e5"
         }
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
     }
   },
-  "auth": {
-    "testgrounds": {
-      "dependsOn": [],
-      "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
-        },
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "socialProviders": [],
-        "usernameAttributes": [],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      },
-      "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "serviceType": "managed"
-    }
-  },
   "function": {
-    "shareFromAPICreation": {
+    "testinggroundsb76a02e5": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"

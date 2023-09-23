@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/share/{id}": {
+      "name": "/share/{id}",
+      "lambdaFunction": "testinggroundsb76a02e5",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

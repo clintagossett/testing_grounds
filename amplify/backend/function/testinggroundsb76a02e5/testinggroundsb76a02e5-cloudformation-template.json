@@ -49,13 +49,13 @@
             "FunctionName": {
                 "Fn::If": [
                     "ShouldNotCreateEnvResources",
-                    "shareFromAPICreation",
+                    "testinggroundsb76a02e5",
                     {
 
                         "Fn::Join": [
                             "",
                             [
-                                "shareFromAPICreation",
+                                "testinggroundsb76a02e5",
                                 "-",
                                 {
                                     "Ref": "env"
@@ -80,13 +80,13 @@
                 "RoleName": {
                     "Fn::If": [
                         "ShouldNotCreateEnvResources",
-                        "testgroundsLambdaRolef8205793",
+                        "testinggroundsLambdaRolebf1a6433",
                         {
 
                             "Fn::Join": [
                                 "",
                                 [
-                                    "testgroundsLambdaRolef8205793",
+                                    "testinggroundsLambdaRolebf1a6433",
                                     "-",
                                     {
                                         "Ref": "env"
