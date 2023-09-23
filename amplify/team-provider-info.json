@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-testgrounds-staging-120205-authRole",
+      "UnauthRoleArn": "arn:aws:iam::423669885238:role/amplify-testgrounds-staging-120205-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::423669885238:role/amplify-testgrounds-staging-120205-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-testgrounds-staging-120205-deployment",
+      "UnauthRoleName": "amplify-testgrounds-staging-120205-unauthRole",
+      "StackName": "amplify-testgrounds-staging-120205",
+      "StackId": "arn:aws:cloudformation:us-east-1:423669885238:stack/amplify-testgrounds-staging-120205/5b814af0-522d-11ee-8e04-0eea812b8ac9",
+      "AmplifyAppId": "d3q5at4qmq8947"
+    },
+    "categories": {
+      "function": {
+        "expressTest": {
+          "deploymentBucketName": "amplify-testgrounds-staging-120205-deployment",
+          "s3Key": "amplify-builds/expressTest-446d7450345a4a6c6535-build.zip"
+        }
+      }
+    }
+  }
+}

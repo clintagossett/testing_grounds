@@ -1,0 +1,28 @@
+{
+  "function": {
+    "expressTest": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_expressTest_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "expressTest"
+        }
+      ]
+    },
+    "AMPLIFY_function_expressTest_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "expressTest"
+        }
+      ]
+    }
+  }
+}
