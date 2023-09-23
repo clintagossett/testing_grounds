@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/share/{id}": {
+      "name": "/share/{id}",
+      "lambdaFunction": "shareFromAPICreation",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "read"
+        ],
+        "guest": [
+          "read"
+        ]
+      }
+    }
+  }
+}

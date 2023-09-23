@@ -1,28 +1,51 @@
 {
-  "function": {
-    "expressTest": {
-      "build": true,
-      "dependsOn": [],
+  "api": {
+    "shareAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "shareFromAPICreation"
+        }
+      ],
       "providerPlugin": "awscloudformation",
-      "service": "Lambda"
+      "service": "API Gateway"
     }
   },
-  "parameters": {
-    "AMPLIFY_function_expressTest_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "expressTest"
-        }
-      ]
-    },
-    "AMPLIFY_function_expressTest_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "expressTest"
-        }
-      ]
+  "auth": {
+    "testgrounds": {
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "managed"
+    }
+  },
+  "function": {
+    "shareFromAPICreation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }

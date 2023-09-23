@@ -13,10 +13,10 @@
     },
     "categories": {
       "function": {
-        "expressTest": {
-          "deploymentBucketName": "amplify-testgrounds-staging-120205-deployment",
-          "s3Key": "amplify-builds/expressTest-446d7450345a4a6c6535-build.zip"
-        }
+        "shareFromAPICreation": {}
+      },
+      "auth": {
+        "testgrounds": {}
       }
     }
   }
